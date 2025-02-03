@@ -20,7 +20,7 @@ app.get('/signup' , (req,res) => {
     }
 
     if(password){
-        if(password.length<8){
+        if(password.length < 8){
             return res.send("Password length should be greater than 8 or less than or equal to 16")
         }
     }
